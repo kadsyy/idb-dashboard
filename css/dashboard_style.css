@@ -1,0 +1,106 @@
+:root {
+    --i-light: #f5f5f9;
+    --i-primary: #696cff;
+    --i-success: #71dd37;
+    --i-dark: #233446;
+    --i-danger: #FF4A2B;
+    --i-cyan: #52D5F2;
+}
+
+/* Override Bootstrap */
+.text-primary {
+    color: var(--i-primary) !important;
+}
+.text-success {
+    color: var(--i-success) !important;
+}
+.table-dark {
+    --bs-table-bg: var(--i-dark);
+    --bs-table-border-color: #2c4258;
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--i-primary);
+    --bs-btn-border-color: var(--i-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--i-primary);
+    --bs-btn-hover-border-color: var(--i-primary);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--i-primary);
+    --bs-btn-active-border-color: var(--i-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #var(--i-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--i-primary);
+    --bs-gradient: none;
+}
+body {
+    color: var(--i-dark);
+}
+.i--bg-light {
+    background: var(--i-light);
+}
+
+.wrap-body-main {
+    background: var(--i-light);
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+hr.divider, .vr.divider {
+    color: #acacac;
+}
+
+/* Button */
+.btn-trans-dark {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-bg: var(--bs-white);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-dark);
+    --bs-btn-hover-bg: var(--bs-light);
+    --bs-btn-hover-border-color: var(--bs-light);
+    --bs-btn-focus-shadow-rgb: var(--bs-light);
+    --bs-btn-active-color: var(--bs-dark);
+    --bs-btn-active-bg: var(--bs-light);
+    --bs-btn-active-border-color: var(--bs-light);
+}
+
+/* List */
+ul.list-style-dot {
+    li + li {
+        margin-top: 1rem;
+    }
+}
+
+/* Icon */
+.icon.stacked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.25rem;
+}
+.icon.stacked.primary {
+    background: #E7E7FF;
+    color: var(--i-primary);
+}
+.icon.stacked.success {
+  background: #E8FADF;
+  color: var(--i-success);
+}
+.icon.stacked.danger {
+  background: #FFE0DB;
+  color: var(--i-danger);
+}
+.icon.stacked.cyan {
+  background: #D7F5FC;
+  color: var(--i-cyan);
+}
